@@ -33,3 +33,15 @@ UPDATE animals SET species = 'digimon' WHERE name LIKE '%mon';
 -- species already set.
 UPDATE animals SET species = 'pokemon' WHERE species IS NULL;
 
+-- Inside a transaction delete all records in the animals table, then roll back the transaction.
+-- After the rollback verify if all records in the animals table still exists.
+
+BEGIN;
+-- delete all records
+DELETE FROM animals;
+-- verify if all records in the animals table IS deleted
+SELECT * FROM animals;
+-- rollback verify if all records in the animals table still exists
+ROLLBACK;
+SELECT * FROM animals;
+
