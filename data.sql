@@ -12,7 +12,6 @@ VALUES ('Pikachu', '2021-01-07', 1, false, 15.04);
 INSERT INTO animals (name, date_of_birth, escape_attempts, neutered, weight_kg) 
 VALUES ('Devimon', '2017-05-12', 5, true, 11);
 
--- new
 INSERT INTO animals (name, date_of_birth, escape_attempts, neutered, weight_kg) 
 VALUES ('Charmander', '2022-02-08', 0, false, -11);
 
