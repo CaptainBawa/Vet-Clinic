@@ -8,3 +8,6 @@ CREATE TABLE animals (
     neutered BOOLEAN DEFAULT FALSE,
     weight_kg NUMERIC
 );
+-- Adding new table header
+ALTER TABLE animals
+ADD COLUMN species VARCHAR(100);
