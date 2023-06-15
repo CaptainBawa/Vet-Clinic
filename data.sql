@@ -120,4 +120,23 @@ UPDATE animals
 SET owner_id = (SELECT owner_id FROM owners WHERE full_name = 'Dean Winchester')
 WHERE name IN ('Angemon', 'Boarmon');
 
+---------------------------------------------------------------------------------------------
 
+-- Insert the following data for vets:
+-- Vet William Tatcher is 45 years old and graduated Apr 23rd, 2000.
+-- Vet Maisy Smith is 26 years old and graduated Jan 17th, 2019.
+-- Vet Stephanie Mendez is 64 years old and graduated May 4th, 1981.
+-- Vet Jack Harkness is 38 years old and graduated Jun 8th, 2008.
+
+-- Vet William Tatcher is 45 years old and graduated Apr 23rd, 2000.
+INSERT INTO vets (name, age, date_of_graduation) 
+VALUES ('William Tatcher', 45, '2000-04-23');
+-- Vet Maisy Smith is 26 years old and graduated Jan 17th, 2019.
+INSERT INTO vets (name, age, date_of_graduation) 
+VALUES ('Maisy Smith', 26, '2019-01-17');
+-- Vet Stephanie Mendez is 64 years old and graduated May 4th, 1981.
+INSERT INTO vets (name, age, date_of_graduation) 
+VALUES ('Stephanie Mendez', 64, '1981-05-04');
+-- Vet Jack Harkness is 38 years old and graduated Jun 8th, 2008.
+INSERT INTO vets (name, age, date_of_graduation) 
+VALUES ('Jack Harkness', 38, '2008-06-08');
