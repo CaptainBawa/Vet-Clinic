@@ -8,6 +8,14 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 <a name="readme-top"></a>
 
+<div align="center">
+  <img src="LinkedIn Cover Main.jpg" alt="logo" width="100%"  height="auto" />
+  <br/>
+
+  <h3><b>Vet Clinic Database</b></h3>
+
+</div>
+
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
