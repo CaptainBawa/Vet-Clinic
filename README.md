@@ -48,6 +48,7 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 - **Query Data**
 - **Insert Data**
+- **Join Tables**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -61,7 +62,6 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Query Multiple Tables**
 - [ ] **Add "join table" For Visits**
 - [ ] **Database Performance Audit**
 - [ ] **Add Database Schema Diagram**
