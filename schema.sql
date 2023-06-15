@@ -67,4 +67,13 @@ ALTER TABLE owners RENAME COLUMN owner_id TO id;
 ALTER TABLE species RENAME COLUMN species_id TO id;
 
 
+---------------------------------------------------------------------------------------------
+
+CREATE TABLE vets (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100),
+    age INT,
+    date_of_graduation DATE
+);
+
 
