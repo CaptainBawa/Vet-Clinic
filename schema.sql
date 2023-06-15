@@ -19,7 +19,7 @@ ADD COLUMN species VARCHAR(100);
 -- age: integer
 
 CREATE TABLE owners (
-    owner_id SERIAL PRIMARY KEY,
+    id SERIAL PRIMARY KEY,
     full_name VARCHAR(100),
     age INT
 );
@@ -30,7 +30,7 @@ CREATE TABLE owners (
 -- name: string
 
 CREATE TABLE species (
-    species_id SERIAL PRIMARY KEY,
+    id SERIAL PRIMARY KEY,
     name VARCHAR(100)
 );
 
@@ -51,7 +51,7 @@ ALTER TABLE animals
 ADD COLUMN species_id INT,
 ADD CONSTRAINT fk_animals_species
 FOREIGN KEY (species_id)
-REFERENCES species(species_id);
+REFERENCES species(id);
 
 
 -- Add column owner_id which is a foreign key referencing the owners table
@@ -59,7 +59,12 @@ ALTER TABLE animals
 ADD COLUMN owner_id INT,
 ADD CONSTRAINT fk_animals_owners
 FOREIGN KEY (owner_id)
-REFERENCES owners(owner_id);
+REFERENCES owners(id);
+
+
+-- Renamed table ID's
+ALTER TABLE owners RENAME COLUMN owner_id TO id;
+ALTER TABLE species RENAME COLUMN species_id TO id;
 
 
 
