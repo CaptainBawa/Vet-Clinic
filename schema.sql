@@ -86,8 +86,10 @@ CREATE TABLE vets (
 -- handle this relationship.
 
 CREATE TABLE specializations (
-    species_id INT,
-    vets_id INT
+    vet_id INT,
+    species_id INT, 
+    FOREIGN KEY (vet_id) REFERENCES vets(id),
+    FOREIGN KEY (species_id) REFERENCES species(id)
 );
 
 -- There is a many-to-many relationship between the tables animals and vets: 
@@ -96,8 +98,11 @@ CREATE TABLE specializations (
 -- it should also keep track of the date of the visit.
 
 CREATE TABLE visits (
-    animals_id INT,
-    vets_id INT
+    vet_id INT,
+    animal_id INT,
+    visit_date DATE,
+    FOREIGN KEY (vet_id) REFERENCES vets(id),
+    FOREIGN KEY (animal_id) REFERENCES animals(id) 
 );
 
 
