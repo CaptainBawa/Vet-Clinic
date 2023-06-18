@@ -70,7 +70,6 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Add "join table" For Visits**
 - [ ] **Database Performance Audit**
 - [ ] **Add Database Schema Diagram**
 
